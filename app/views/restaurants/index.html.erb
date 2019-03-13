@@ -1,0 +1,11 @@
+<h1>Restaurants</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li class="no-bullets">
+      <ul class="list-inline">
+        <li class="list-inline-item"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
